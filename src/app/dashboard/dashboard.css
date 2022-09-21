@@ -1,0 +1,5 @@
+.dashboard__activities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+  grid-gap: var(--xlarge);
+}

@@ -1,14 +1,21 @@
 import "./assets/css/index.scss";
 import "./index.css";
+
 import Home from "./app/home";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import "primereact/resources/themes/lara-light-indigo/theme.css"; //theme
+import "primereact/resources/primereact.min.css"; //core css
+import "primeicons/primeicons.css"; //icons
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Home />
+    <BrowserRouter>
+      <Home />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
